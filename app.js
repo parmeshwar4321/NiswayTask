@@ -12,6 +12,8 @@ const app = express();
 const sallaryRouters = require("./routes/sallery");
 const middleware = require("./utils/middleware");
 
+//for test
+app.get("/", (req, res) => res.send({ msg: "welcome to my application" }));
 
 //middlewears
 app.use(express.json());

@@ -18,6 +18,40 @@ Run your project
 yarn start
 ```
 
-### to set Database
+### endpoints
+
+* fetch all records
+
+```
+api/salary/
+```
+***options***
+> filter
+```
+<domain>/api/salary/?<fieldName>=<value>
+
+```
+example:
+```
+<domain>/api/salary/?industry=Government
+```
+> sort
+```
+<domain>/api/salary/?sort=<fieldName>
+
+```
+example:
+```
+<domain>/api/salary/?sort=industry
+```
+---
+* fetch single record
+```
+api/salary/:id
+```
+example:
+```
+<domain>/api/salary/62f33d3585bf835b88a8955a
+```
 
 
